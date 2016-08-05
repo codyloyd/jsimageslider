@@ -1,0 +1,19 @@
+body{
+  position: relative;
+}
+.window{
+  width: 480px;
+  height: 300px;
+  overflow: hidden;
+}
+.slider {
+  position: relative;
+  vertical-align: top;
+    img {
+      width: 480px;
+      height: 300px;
+      display: inline-block;
+      margin-right: -4px;
+      top:0;
+    }
+}
