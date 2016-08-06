@@ -1,17 +1,60 @@
 body{
   position: relative;
+  background-color: #333
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 10px;
+  border-radius: 100%;
+  border: 2px solid #ccc;
+  display: inline-block;
+  -webkit-transition: background-color 1.5s, color .5s;
+    transition: background-color 1.5s, color .5s;
+}
+.navigation {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+button {
+  z-index: 1000;
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 24px;
+  height: 100%;
+  padding: 0 55px;
+  color: rgba(0, 0, 0, 0);
+  -webkit-transition: background-color 2s, color .5s;
+    transition: background-color 2s, color .5s;
+  &:hover{
+    background-color: rgba(0,0,0,.4);
+    color: rgba(255, 255, 255, .5);
+
+  }
+}
+#next {
+  right:0;
+}
+#previous {
+  left:0;
 }
 .window{
-  width: 480px;
-  height: 300px;
+  margin: 20px auto;
+  width: 800px;
+  height: 600px;
   overflow: hidden;
+  position: relative;
 }
 .slider {
   position: relative;
   vertical-align: top;
     img {
-      width: 480px;
-      height: 300px;
+      width: 800px;
+      height: 600px;
       display: inline-block;
       margin-right: -4px;
       top:0;

@@ -8,15 +8,21 @@
 </head>
 <body>
 <div class="window">
+  <button type="button" name="button" id="previous">◀</button>
+  <button type="button" name="button" id="next">▶</button>
   <div class="slider">
-    <img src="./img/img1.jpg" alt="">
-    <img src="./img/img2.jpg" alt="">
-    <img src="./img/img3.jpg" alt="">
-    <img src="./img/img4.jpg" alt="">
+    <img src="./img/img1.jpg" alt="0">
+    <img src="./img/img2.jpg" alt="1">
+    <img src="./img/img3.jpg" alt="2">
+    <img src="./img/img4.jpg" alt="3">
   </div>
 </div>
-<button type="button" name="button" id="previous">previous</button>
-<button type="button" name="button" id="next">next</button>
+<div class="navigation">
+  <div class="dot" id="0"></div>
+  <div class="dot" id="1"></div>
+  <div class="dot" id="2"></div>
+  <div class="dot" id="3"></div>
+</div>
 </body>
 <script src="./js/jquery-3.1.0.min.js" charset="utf-8"></script>
 <script src="./js/script.js" charset="utf-8"></script>
